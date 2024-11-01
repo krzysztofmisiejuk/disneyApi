@@ -25,6 +25,7 @@ const CardComponent = ({ data }) => {
 			{isModalShown &&
 				createPortal(
 					<Modal
+						isModalShown={isModalShown}
 						setIsModalShown={setIsModalShown}
 						data={data}
 					/>,

@@ -8,6 +8,7 @@ import {
 	ModalBackground,
 } from './';
 import { Button } from '../';
+import useEscKey from '../../hooks/useEscKey';
 
 const Modal = ({ setIsModalShown, data }) => {
 	const { themeColors } = useContext(ThemeContext);
@@ -28,6 +29,8 @@ const Modal = ({ setIsModalShown, data }) => {
 			setIsModalShown(false);
 		}
 	};
+
+	useEscKey(setIsModalShown);
 
 	return (
 		<ModalBackground onClick={closeModalByBackgroundClick}>
