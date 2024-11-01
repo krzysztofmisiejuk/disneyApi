@@ -26,13 +26,13 @@ const Pagination = ({ setCurrentPage, totalPages }) => {
 						borderColor: `${colors.greyColor}`,
 					},
 					'& .Mui-selected': {
-						outline: "none",
+						outline: 'none',
 						borderWidth: '2px',
-						fontWeight: "bold",
-						scale: "1.15"
+						fontWeight: 'bold',
+						scale: '1.15',
 					},
 					'& .MuiPaginationItem-root:hover': {
-						backgroundColor:`${colors.darkGreyColor}` ,
+						backgroundColor: `${colors.darkGreyColor}`,
 					},
 				}}
 			/>

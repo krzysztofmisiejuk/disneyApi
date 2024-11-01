@@ -1,4 +1,4 @@
-import {HeaderWrapper} from './';
+import { HeaderWrapper } from './';
 import { SwitchTheme } from '../';
 
 const Header = () => {

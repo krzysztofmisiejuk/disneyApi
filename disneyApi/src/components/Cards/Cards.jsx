@@ -1,6 +1,6 @@
 import { CardComponent, CardsWrapper } from './';
 import useFetchData from '../../hooks/useFetchData';
-import { Pagination } from '../index';
+import { Pagination } from '../';
 import { useState } from 'react';
 
 const BASE_URL = `https://api.disneyapi.dev/character`;

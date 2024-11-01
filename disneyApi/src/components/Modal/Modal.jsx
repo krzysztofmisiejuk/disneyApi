@@ -32,8 +32,8 @@ const Modal = ({ setIsModalShown, data }) => {
 	return (
 		<ModalBackground onClick={closeModalByBackgroundClick}>
 			<ModalContent
-				$darkColor={themeColors.dark}
-				$lightColor={themeColors.light}
+				$darkColor={themeColors.background}
+				$lightColor={themeColors.textColor}
 			>
 				<>
 					<ModalImg

@@ -1,8 +1,7 @@
-import { useState} from 'react';
+import { useState } from 'react';
 import { createPortal } from 'react-dom';
 import { StyledCard } from './';
 import { Button, Modal } from '../';
-
 
 const CardComponent = ({ data }) => {
 	const [isModalShown, setIsModalShown] = useState(false);
@@ -16,7 +15,7 @@ const CardComponent = ({ data }) => {
 			<StyledCard>
 				<img
 					src={data.imageUrl}
-					alt={`${data.name} image`}
+					alt={`${data.name} profile picture`}
 					width={200}
 					height={150}
 				/>

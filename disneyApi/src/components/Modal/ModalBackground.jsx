@@ -11,7 +11,6 @@ const ModalBackground = styled.div`
 	width: 100%;
 	box-shadow: 0px 0px 1px 1px #8b8b8d;
 	background-color: #00000011;
-
 	backdrop-filter: blur(10px);
 `;
 

@@ -3,11 +3,11 @@ import MuiSwitch from './MuiSwitch';
 import { ThemeContext } from '../../context/ThemeContext';
 
 const SwitchTheme = () => {
-	const { setTheme } = useContext(ThemeContext);
+	const { setIsDarkTheme } = useContext(ThemeContext);
 	return (
 		<MuiSwitch
 			onChange={() => {
-				setTheme((prev) => !prev);
+				setIsDarkTheme((prev) => !prev);
 			}}
 		/>
 	);

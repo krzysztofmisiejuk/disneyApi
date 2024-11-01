@@ -7,6 +7,7 @@ const ModalContent = styled.div`
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
+	text-align: left;
 	height: min(600px, 100vh);
 	max-height: 100%;
 	width: min(600px, 95%);
@@ -21,7 +22,7 @@ const ModalContent = styled.div`
 	}
 
 	&::-webkit-scrollbar-track {
-		background: ${colors.mainDark};
+		background: ${(props) => props.$darkColor};
 	}
 
 	&::-webkit-scrollbar-thumb {
