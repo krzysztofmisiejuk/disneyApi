@@ -1,7 +1,8 @@
-import { useState } from 'react';
+import { useState} from 'react';
 import { createPortal } from 'react-dom';
 import { StyledCard } from './';
 import { Button, Modal } from '../';
+
 
 const CardComponent = ({ data }) => {
 	const [isModalShown, setIsModalShown] = useState(false);

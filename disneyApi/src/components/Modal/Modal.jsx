@@ -1,6 +1,12 @@
 import { useContext } from 'react';
 import { ThemeContext } from '../../context/ThemeContext';
-import {ModalImg, ModalList, ModalLists, ModalContent, ModalBackground} from "./"
+import {
+	ModalImg,
+	ModalList,
+	ModalLists,
+	ModalContent,
+	ModalBackground,
+} from './';
 import { Button } from '../';
 
 const Modal = ({ setIsModalShown, data }) => {
@@ -17,8 +23,14 @@ const Modal = ({ setIsModalShown, data }) => {
 		)
 		.filter((item) => item[1].length);
 
+	const closeModalByBackgroundClick = (e) => {
+		if (e.target === e.currentTarget) {
+			setIsModalShown(false);
+		}
+	};
+
 	return (
-		<ModalBackground>
+		<ModalBackground onClick={closeModalByBackgroundClick}>
 			<ModalContent
 				$darkColor={themeColors.dark}
 				$lightColor={themeColors.light}
