@@ -8,7 +8,7 @@ const ModalContent = styled.div`
 	justify-content: space-between;
 	align-items: center;
 	text-align: left;
-	height: min(600px, 100vh);
+	height: min(650px, 90vh);
 	max-height: 100%;
 	width: min(600px, 95%);
 	color: ${(props) => props.$lightColor};

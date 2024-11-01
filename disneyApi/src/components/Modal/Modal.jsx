@@ -14,15 +14,14 @@ const Modal = ({ setIsModalShown, data }) => {
 	const { themeColors } = useContext(ThemeContext);
 
 	const dataEntries = Object.entries(data);
-	const filteredDataEntries = dataEntries
-		.filter(
-			(item) =>
-				item[0] === 'films' ||
+	const filteredDataEntries = dataEntries.filter(
+		(item) =>
+			(item[0] === 'films' ||
 				item[0] === 'shortFilms' ||
 				item[0] === 'videoGames' ||
-				item[0] === 'tvShows'
-		)
-		.filter((item) => item[1].length);
+				item[0] === 'tvShows') &&
+			item[1].length
+	);
 
 	const closeModalByBackgroundClick = (e) => {
 		if (e.target === e.currentTarget) {

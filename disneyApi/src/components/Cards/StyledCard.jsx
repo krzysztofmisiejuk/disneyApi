@@ -5,8 +5,9 @@ const StyledCard = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	align-items: center;
 	padding: 0.5rem 0.5rem 1rem;
-	max-width: 200px;
+	width: 200px;
 	height: 300px;
 	color: ${colors.lightGreyColor};
 	border: 1px solid ${colors.lightGreyColor};
